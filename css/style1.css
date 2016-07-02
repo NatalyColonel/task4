@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	padding: 0;
+    background-image: url(img/background.png);
+    background-size: 100%;
+     }
+.header {
+	background-color: white;
+	float: left;
+	width: 20%;
+}
+.sidebar {
+    background-color: white; 
+    float: left;
+    width: 35%;
+}
+.content {
+	background-color: white;
+    float: right;
+	width: 15%;
+}
+.footer {
+	clear: left;
+    float: right;
+	background-color: white;
+	width: 40%;
+
+}
+.container {
+	/*position: relative;
+	overflow: hidden;*/
+   	
+   }  
+  }
+ .clearfix:after {
+ 	content: '';
+ 	clear:both;
+ 	display: block;
+ }
+
+  ul#menu  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color:  343434;
+}
+
+ul#menu li {
+    float: left;
+    display:inline;
+}
+
+ul#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul#menu li a:hover {}
+  
+  .fon1 {  /* фон для левой колонки (синий) */
+        width: 100%;
+        background: #edeef0;
+        float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
+        position: relative; /* чтобы иметь возможность сместить фон */
+        right: 40%; /* обнажаем красный фон для центральной колонки. 30% - ширина центральной колонки */
+}
+  .fon2 {/* фон для центральной колонки (красный) */
+        width: 100%;
+        background: white;
+        float: left;
+        position: relative;
+        right: 30%; /* обнажаем желтый фон для правой колонки. 40% - ширина правой колонки */
+}
+  .fon3 {/* фон для правой колонки (желтый) */
+        width: 100%;
+        background: #edeef0;
+        float: left;
+}
+.leftColumn {
+width: 30%;
+float: left;
+overflow: hidden; /* страховка от ломки верстки объектами шире размера колонки-родителя */
+position:relative;
+left:20%; /* возвращаем колонки с контентом на свои позиции. 70% - сумма смещений оберток fon1 и fon2 */
+}
+.centerColumn {
+width: 30%;
+float: left;
+overflow: hidden;
+position:relative;
+left:70%;
+}
+.rightColumn {
+width: 39%;
+float: left;
+overflow: hidden;
+position:relative;
+left:70%;
+}
